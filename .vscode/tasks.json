@@ -1,0 +1,63 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-I/usr/include/SFML",
+                "-L/usr/lib/x86_64-linux-gnu",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/Application.cpp",
+                "${fileDirname}/Entity.cpp", 
+                "${fileDirname}/World.cpp", 
+                "${fileDirname}/CommandQueue.cpp", 
+                "${fileDirname}/Command.cpp", 
+                "${fileDirname}/Player.cpp", 
+                "${fileDirname}/Scene.cpp", 
+                "${fileDirname}/SpriteNode.cpp", 
+                "${fileDirname}/Cloud.cpp", 
+                "${fileDirname}/StateStack.cpp", 
+                "${fileDirname}/State.cpp", 
+                "${fileDirname}/GameState.cpp", 
+                "${fileDirname}/MenuState.cpp", 
+                "${fileDirname}/PauseState.cpp", 
+                "${fileDirname}/TitleState.cpp", 
+                "${fileDirname}/SettingState.cpp", 
+                "${fileDirname}/DataTables.cpp", 
+                "${fileDirname}/TextNode.cpp", 
+                "${fileDirname}/Utility.cpp", 
+                "${fileDirname}/Container.cpp", 
+                "${fileDirname}/Button.cpp", 
+                "${fileDirname}/Component.cpp", 
+                "${fileDirname}/Label.cpp", 
+                "${fileDirname}/Projectile.cpp", 
+                "${fileDirname}/Pickup.cpp", 
+                "${fileDirname}/ParticleNode.cpp", 
+                "${fileDirname}/EmitterNode.cpp", 
+                "${fileDirname}/Animation.cpp", 
+                "${fileDirname}/SoundPlayer.cpp", 
+                "${fileDirname}/MusicPlayer.cpp", 
+                "${fileDirname}/SoundNode.cpp", 
+                "${fileDirname}/PostEffect.cpp", 
+                
+                
+                
+                
+                "-W",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-audio"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
